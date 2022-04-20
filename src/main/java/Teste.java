@@ -10,4 +10,6 @@ public class Teste {
     sadasdsadsa
     sadasdsadsa
     sadasdsadsa
+
+    qualquer
 }
