@@ -1,35 +1,36 @@
-package RegistarCliente;
+package EfetuarCompra;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class RegistarCliente extends JFrame {
-    private JList list1;
+public class codigoProduto extends JFrame {
+
+
     private JLabel nomeLojaLabel;
     private JLabel horaLabel;
+    private JList lista;
     private JButton inserirProdutoButton;
-    private JButton anularProdutoButton;
     private JButton sairButton;
     private JButton aplicarDescontoButton;
     private JButton finalizarButton;
+    private JButton anularProdutoButton;
+    private JTextField CÓDIGOPRODUTOTextField;
+    private JButton OKButton;
+    private JButton voltarButton;
 
-    public RegistarCliente() {
-        finalizarButton.addActionListener(new ActionListener() {
+    public codigoProduto() {
+        voltarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
-        inserirProdutoButton.addActionListener(new ActionListener() {
+        OKButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
 
             }
         });
-    }
-
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
     }
 }
