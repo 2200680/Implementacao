@@ -46,4 +46,14 @@ public class EfetuarCompra {
             }
         });
     }
+
+
+    public static void main(String[] args) {
+
+    }
+
+    private void createUIComponents() {
+        // TODO: place custom component creation code here
+    }
+
 }
