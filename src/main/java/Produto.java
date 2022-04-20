@@ -3,6 +3,7 @@ public class Produto {
     private String produto;
     private long quantidade;
     private double preço_unitario;
+    private long quantidadeVendida;
 
     public Produto(long id, String produto, long quantidade, double preço_unitario) {
         this.id = id;
