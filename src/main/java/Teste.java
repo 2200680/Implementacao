@@ -11,6 +11,5 @@ public class Teste {
     sadasdsadsa
     sadasdsadsa
 
-    qualquer
-            es um nabo rui
+    qualquer;
 }
