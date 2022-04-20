@@ -1,4 +1,6 @@
-public class Produto {
+import javax.swing.*;
+
+public class Produto extends JFrame {
     private long id;
     private String produto;
     private long quantidade;
