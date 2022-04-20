@@ -1,11 +1,13 @@
 package Estatistica;
+
 import Recursos.Produto;
 
 import javax.swing.*;
 import java.util.LinkedList;
 
-public class JanelaProdutoMaisVendido extends JFrame{
-    private LinkedList<Produto> produtos;
+public class JanelaProdutoMaisVendido extends JFrame {
+
+    private DefaultListModel ProdutomaisVendido;
     //GUI
     private JPanel panel1;
     private JTextField nomeLojaTextField;
@@ -15,12 +17,6 @@ public class JanelaProdutoMaisVendido extends JFrame{
     private JTextField produtoMaisVendidoTextField;
     private JScrollPane scroolProdutoMaisVendido;
     private JList listProdutoMaisVendido;
-
-
-    public void devolverProdutoMaisVendido(){
-
-    }
-
 
 
 
