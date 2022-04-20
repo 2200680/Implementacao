@@ -55,7 +55,7 @@
             <properties>
               <layoutOrientation value="2"/>
               <model>
-                <item value="    ID         | PRODUTO |       Quantidade     | Preço Unitario    | Total"/>
+                <item value="ID         | PRODUTO |       Quantidade     | Preço Unitario    | Total"/>
               </model>
             </properties>
           </component>

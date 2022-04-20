@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 public class EfetuarCompra {
     private JList list1;
-    private JLabel nomeLojaLabel;
+    private JLabel nomeLojaLabel1;
     private JLabel horaLabel;
     private JButton inserirProdutoButton;
     private JButton anularProdutoButton;
