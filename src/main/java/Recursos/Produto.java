@@ -1,11 +1,12 @@
-import javax.swing.*;
+package Recursos;
 
-public class Produto extends JFrame {
-    private long id;
-    private String produto;
-    private long quantidade;
-    private double preço_unitario;
-    private long quantidadeVendida;
+import Estatistica.*;
+public class Produto {
+    public long id;
+    public String produto;
+    public long quantidade;
+    public double preço_unitario;
+    public long quantidadeVendida;
 
     public Produto(long id, String produto, long quantidade, double preço_unitario) {
         this.id = id;
