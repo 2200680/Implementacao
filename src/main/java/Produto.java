@@ -29,6 +29,10 @@ public class Produto {
         return preço_unitario;
     }
 
+    public long getQuantidadeVendida() {
+        return quantidadeVendida;
+    }
+
     //Setts
     public void setProduto(String produto) {
         this.produto = produto;
