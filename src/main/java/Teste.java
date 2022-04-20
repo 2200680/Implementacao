@@ -11,5 +11,5 @@ public class Teste {
     sadasdsadsa
     sadasdsadsa
 
-    qualquer
+    qualquer;
 }
