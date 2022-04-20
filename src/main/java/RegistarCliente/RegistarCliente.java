@@ -25,7 +25,7 @@ public class RegistarCliente extends JFrame {
 
 
     public static void main(String[] args) {
-        new RegistarCliente("Registar Cliente").setVisible(true);
+        new RegistarCliente("Registar Recursos.Cliente").setVisible(true);
     }
 
 

@@ -1,3 +1,5 @@
+package Recursos;
+
 public class Cliente {
     private String nome;
     private long numeroCC;
