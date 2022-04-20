@@ -5,8 +5,6 @@ import javax.swing.*;
 public class RegistarCliente extends JFrame {
     private JPanel Principal;
     private JList list1;
-    private JLabel nomeLojaLabel;
-    private JLabel horaLabel;
     private JButton inserirProdutoButton;
     private JButton anularProdutoButton;
     private JButton sairButton;
@@ -27,7 +25,7 @@ public class RegistarCliente extends JFrame {
 
 
     public static void main(String[] args) {
-        new RegistarCliente("Mines").setVisible(true);
+        new RegistarCliente("Registar Cliente").setVisible(true);
     }
 
 
