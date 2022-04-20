@@ -74,7 +74,7 @@
               </grid>
             </constraints>
             <properties>
-              <text value="Produto mais Vendido"/>
+              <text value="Recursos.Produto mais Vendido"/>
             </properties>
           </component>
         </children>

@@ -1,8 +1,13 @@
 package Estatistica;
 
-import javax.swing.*;
+import Recursos.Produto;
 
-public class JanelaProdutoMaisVendido extends JFrame{
+import javax.swing.*;
+import java.util.LinkedList;
+
+public class JanelaProdutoMaisVendido extends JFrame {
+
+    private DefaultListModel ProdutomaisVendido;
     //GUI
     private JPanel panel1;
     private JTextField nomeLojaTextField;
