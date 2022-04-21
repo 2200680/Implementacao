@@ -1,9 +1,6 @@
 package Estatistica;
 
-import Recursos.Produto;
-
 import javax.swing.*;
-import java.util.LinkedList;
 
 public class JanelaProdutoMaisVendido extends JFrame {
 
@@ -19,5 +16,5 @@ public class JanelaProdutoMaisVendido extends JFrame {
     private JList listProdutoMaisVendido;
 
 
-
+GestaoListas lista= GestaoListas.getProdutos();
 }
