@@ -2,58 +2,64 @@ package EfetuarCompra;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class EfetuarCompra {
-    private JLabel nomeLojaLabel;
-    private JLabel horaLabel;
+
+public class EfetuarCompra extends JFrame {
+    private JPanel JanelaPrincipal;
     private JList list1;
-    private JButton inserirProdutoButton;
-    private JButton sairButton;
-    private JButton aplicarDescontoButton;
-    private JButton finalizarButton;
-    private JButton anularProdutoButton;
+    private JButton inserirProdutoButton;           //inserir produto
+    private JButton sairButton;                     //sair
+    private JButton aplicarDescontoButton;          //aplicar desconto
+    private JButton finalizarButton;                //finalizar
+    private JButton anularProdutoButton;            //anular produto
+    private JPanel painelLista;
+    private JPanel painelBotoes;
+    private JPanel painelNomeLojaHora;
 
-    public EfetuarCompra() {
-        inserirProdutoButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+    public EfetuarCompra(String title) {
+        super(title);
 
-            }
-        });
-        anularProdutoButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setContentPane(JanelaPrincipal);
 
-            }
-        });
-        aplicarDescontoButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        pack();
 
-            }
-        });
-        sairButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+    sairButton.addActionListener(this::sairButtonActionPerformed);
+//    inserirProdutoButton.addActionListener(this::inserirProdutoButtonActionPerformed);
+//    aplicarDescontoButton.addActionListener(this::aplicarDescontoButtonActionPerformed);
+//    finalizarButton.addActionListener(this::finalizarButtonActionPerformed);
+//    anularProdutoButton.addActionListener(this::anularProdutoButtonActionPerformed);
 
-            }
-        });
-        finalizarButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+    }
 
-            }
-        });
+//
+//    private void finalizarButtonActionPerformed(ActionEvent actionEvent) {
+//
+//    }
+//
+//    private void anularProdutoButtonActionPerformed(ActionEvent actionEvent) {
+//
+//    }
+//
+//    private void aplicarDescontoButtonActionPerformed(ActionEvent actionEvent) {
+//
+//    }
+//
+//    private void inserirProdutoButtonActionPerformed(ActionEvent actionEvent) {
+//
+//    }
+
+    private void sairButtonActionPerformed(ActionEvent e){
+        System.exit(0);
     }
 
 
     public static void main(String[] args) {
-
+        new EfetuarCompra("Efetuar Compra").setVisible(true);
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
-    }
+//    private void createUIComponents() {
+//        // TODO: place custom component creation code here
+//    }
 
 }

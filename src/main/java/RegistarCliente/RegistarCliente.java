@@ -16,17 +16,13 @@ public class RegistarCliente extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setContentPane(Principal);
         pack();
-
-
-
-
     }
 
 
 
-    public static void main(String[] args) {
-        new RegistarCliente("Registar Recursos.Cliente").setVisible(true);
-    }
+//    public static void main(String[] args) {
+//        new RegistarCliente("Registar Recursos.Cliente").setVisible(true);
+//    }
 
 
     private void createUIComponents() {

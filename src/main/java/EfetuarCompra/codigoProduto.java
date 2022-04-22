@@ -2,13 +2,9 @@ package EfetuarCompra;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class codigoProduto extends javax.swing.JFrame {
+public class codigoProduto extends JFrame {
 
-
-    private JLabel nomeLojaLabel;
-    private JLabel horaLabel;
     private JList lista;
     private JButton inserirProdutoButton;
     private JButton sairButton;
@@ -18,24 +14,38 @@ public class codigoProduto extends javax.swing.JFrame {
     private JTextField CÓDIGOPRODUTOTextField;
     private JButton OKButton;
     private JButton voltarButton;
+    private JPanel JanelaPrincipal;
+    private JPanel painelLista;
+    private JPanel painelBotoesProduto;
+    private JPanel painelBotoes;
+    private JPanel painelNomeLojaHora;
 
-    public codigoProduto() {
-        voltarButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+    public codigoProduto(String title) {
+        super(title);
 
-            }
-        });
-        OKButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setContentPane(JanelaPrincipal);
 
-            }
-        });
+        pack();
+
+        sairButton.addActionListener(this::sairButtonActionPerformed);
+//    inserirProdutoButton.addActionListener(this::inserirProdutoButtonActionPerformed);
+//    aplicarDescontoButton.addActionListener(this::aplicarDescontoButtonActionPerformed);
+//    finalizarButton.addActionListener(this::finalizarButtonActionPerformed);
+//    anularProdutoButton.addActionListener(this::anularProdutoButtonActionPerformed);
+
     }
 
-    private void createUIComponents() {
-        // TODO: place custom component creation code here
+    private void sairButtonActionPerformed(ActionEvent e) {
+        System.exit(0);
     }
 
+//    private void createUIComponents() {
+//        // TODO: place custom component creation code here
+//    }
+
+    public static void main(String[] args) {
+        new codigoProduto("codigo Produto").setVisible(true);
+    }
 }
+
