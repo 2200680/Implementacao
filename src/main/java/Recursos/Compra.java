@@ -8,14 +8,16 @@ public class Compra {
     public String produto;
     public long quantidade;
     public double preço_unitário;
-    public long quantidadeVendida;
+    public long preco_total;
 
-    public Compra(long id, String produto, long quantidade, double preço_unitário, long quantidadeVendida) {
+
+    public Compra(long id, String produto, long quantidade, double preço_unitário, long preco_total) {
         this.id = id;
         this.produto = produto;
         this.quantidade = quantidade;
         this.preço_unitário = preço_unitário;
-        this.quantidadeVendida = quantidadeVendida;
+        this.preco_total = preco_total;
+
     }
 
     public long getId() {
@@ -50,11 +52,11 @@ public class Compra {
         this.preço_unitário = preço_unitário;
     }
 
-    public long getQuantidadeVendida() {
-        return quantidadeVendida;
+    public long getPreco_total() {
+        return preco_total;
     }
 
-    public void setQuantidadeVendida(long quantidadeVendida) {
-        this.quantidadeVendida = quantidadeVendida;
+    public void setPreco_total(long preco_total) {
+        this.preco_total = preco_total;
     }
 }

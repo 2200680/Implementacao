@@ -20,9 +20,9 @@ public class RegistarCliente extends JFrame {
 
 
 
-//    public static void main(String[] args) {
-//        new RegistarCliente("Registar Recursos.Cliente").setVisible(true);
-//    }
+    public static void main(String[] args) {
+        new RegistarCliente("Registar Recursos.Cliente").setVisible(true);
+    }
 
 
     private void createUIComponents() {

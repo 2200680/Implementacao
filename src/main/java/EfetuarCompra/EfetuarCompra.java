@@ -3,10 +3,8 @@ package EfetuarCompra;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-
 public class EfetuarCompra extends JFrame {
     private JPanel JanelaPrincipal;
-    private JList list1;
     private JButton inserirProdutoButton;           //inserir produto
     private JButton sairButton;                     //sair
     private JButton aplicarDescontoButton;          //aplicar desconto
@@ -15,6 +13,7 @@ public class EfetuarCompra extends JFrame {
     private JPanel painelLista;
     private JPanel painelBotoes;
     private JPanel painelNomeLojaHora;
+    private JList lista;
 
     public EfetuarCompra(String title) {
         super(title);
@@ -24,30 +23,32 @@ public class EfetuarCompra extends JFrame {
 
         pack();
 
-    sairButton.addActionListener(this::sairButtonActionPerformed);
-//    inserirProdutoButton.addActionListener(this::inserirProdutoButtonActionPerformed);
-//    aplicarDescontoButton.addActionListener(this::aplicarDescontoButtonActionPerformed);
-//    finalizarButton.addActionListener(this::finalizarButtonActionPerformed);
-//    anularProdutoButton.addActionListener(this::anularProdutoButtonActionPerformed);
+        sairButton.addActionListener(this::sairButtonActionPerformed);
+        inserirProdutoButton.addActionListener(this::inserirProdutoButtonActionPerformed);
+        aplicarDescontoButton.addActionListener(this::aplicarDescontoButtonActionPerformed);
+        finalizarButton.addActionListener(this::finalizarButtonActionPerformed);
+        anularProdutoButton.addActionListener(this::anularProdutoButtonActionPerformed);
+    }
+
+
+    private void finalizarButtonActionPerformed(ActionEvent actionEvent) {
+        this.setVisible(true);
 
     }
 
-//
-//    private void finalizarButtonActionPerformed(ActionEvent actionEvent) {
-//
-//    }
-//
-//    private void anularProdutoButtonActionPerformed(ActionEvent actionEvent) {
-//
-//    }
-//
-//    private void aplicarDescontoButtonActionPerformed(ActionEvent actionEvent) {
-//
-//    }
-//
-//    private void inserirProdutoButtonActionPerformed(ActionEvent actionEvent) {
-//
-//    }
+    private void anularProdutoButtonActionPerformed(ActionEvent actionEvent) {
+        this.setVisible(true);
+    }
+
+    private void aplicarDescontoButtonActionPerformed(ActionEvent actionEvent) {
+        this.setVisible(true);
+
+    }
+
+    private void inserirProdutoButtonActionPerformed(ActionEvent actionEvent) {
+        this.setVisible(true);
+
+    }
 
     private void sairButtonActionPerformed(ActionEvent e){
         System.exit(0);
